@@ -1,0 +1,8 @@
+<div class="letters-container">
+    <ul>
+        <li *ngFor="let letter of letters" (click)="onClick(letter)"
+            [ngClass]="{'selected': selectedLetters.includes(letter)}">
+            {{ letter }}
+        </li>
+    </ul>
+</div>
